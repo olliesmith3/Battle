@@ -18,6 +18,8 @@ enable :sessions
   get '/play' do
     @name1 = session[:name1]
     @name2 = session[:name2]
+    @hp1 = 50
+    @hp2 = 50
     erb(:play)
   end
 
